@@ -2,23 +2,25 @@
 <html lang="it">
 <head>
 <meta charset="UTF-8">
-<title>Registratore Lezioni</title>
+<title>Registratore Didattico</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-  <h1>Registratore Lezione</h1>
+  <h1>Registratore Didattico</h1>
 </header>
 
 <div class="controls">
-  <button onclick="startRecording()">▶️ Avvia</button>
-  <button onclick="stopRecording()">⏹ Stop</button>
+  <button onclick="startRecording()">▶️ REC</button>
+  <button onclick="pauseRecording()">⏸ PAUSA</button>
+  <button onclick="resumeRecording()">⏵ RIPRENDI</button>
+  <button onclick="stopRecording()">⏹ STOP</button>
 </div>
 
-<div class="layout">
-  <video id="cam" autoplay muted></video>
-  <video id="screen" autoplay muted></video>
+<div class="settings">
+  Dimensione webcam:
+  <input type="range" min="100" max="400" value="200" id="sizeSlider">
 </div>
 
 <canvas id="canvas"></canvas>
