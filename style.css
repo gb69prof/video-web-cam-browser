@@ -1,42 +1,28 @@
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
+  font-family: Arial;
   background: #111;
   color: white;
   text-align: center;
 }
 
 header {
-  padding: 10px;
   background: #222;
+  padding: 10px;
 }
 
-.controls {
+.controls button {
+  margin: 5px;
+  padding: 10px 15px;
+  font-size: 14px;
+}
+
+.settings {
   margin: 10px;
 }
 
-button {
-  padding: 10px 20px;
-  margin: 5px;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-.layout {
-  display: flex;
-  height: 60vh;
-}
-
-#cam {
-  width: 25%;
-  background: black;
-}
-
-#screen {
-  width: 75%;
-  background: black;
-}
-
 canvas {
-  display: none;
+  border: 2px solid #333;
+  width: 90%;
+  max-width: 1000px;
 }
