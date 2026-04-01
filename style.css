@@ -1,0 +1,42 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #111;
+  color: white;
+  text-align: center;
+}
+
+header {
+  padding: 10px;
+  background: #222;
+}
+
+.controls {
+  margin: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.layout {
+  display: flex;
+  height: 60vh;
+}
+
+#cam {
+  width: 25%;
+  background: black;
+}
+
+#screen {
+  width: 75%;
+  background: black;
+}
+
+canvas {
+  display: none;
+}
