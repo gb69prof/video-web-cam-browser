@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>Registratore Lezioni</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Registratore Lezione</h1>
+</header>
+
+<div class="controls">
+  <button onclick="startRecording()">▶️ Avvia</button>
+  <button onclick="stopRecording()">⏹ Stop</button>
+</div>
+
+<div class="layout">
+  <video id="cam" autoplay muted></video>
+  <video id="screen" autoplay muted></video>
+</div>
+
+<canvas id="canvas"></canvas>
+
+<script src="app.js"></script>
+</body>
+</html>
